@@ -27,7 +27,7 @@
     "dcontrollers": "^1.1.0",
     "dexpress": "^2.0.1",
     "dotenv": "^4.0.0",
-    "drequest-maxdome": "^2.3.1"
+    "drequest-maxdome": "^2.3.2"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
