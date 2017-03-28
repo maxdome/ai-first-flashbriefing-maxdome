@@ -4,12 +4,12 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     tipOfTheDay = (await maxdome.request('tipOfTheDays').send())[0];
   } catch (e) {}
   if (!tipOfTheDay) {
-    res.send();
+    res.send([]);
     return;
   }
   const review = tipOfTheDay.review;
   if (!review) {
-    res.send();
+    res.send([]);
     return;
   }
   const asset = review.asset;
@@ -23,11 +23,11 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
       break;
   }
   const maxpert = review.maxpert;
-  res.send({
+  res.send([{
     uid: asset.link,
     updateDate: tipOfTheDay.published.toISOString(),
     titleText: `Der Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
     mainText: asset.description,
     redirectionUrl: asset.link,
-  });
+  }]);
 }]];
