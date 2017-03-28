@@ -31,7 +31,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
       uid: 'Error',
       updateDate: new Date().toISOString(),
       titleText: 'maxdome ist momentan nicht verfügbar',
-      mainText: '',
+      mainText: e.message,
       redirectionUrl: '',
     });
   }
