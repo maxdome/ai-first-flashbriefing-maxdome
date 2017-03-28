@@ -34,5 +34,6 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
       mainText: 'Tipp des Tages ist momentan nicht verfügbar',
       redirectionUrl: '',
     });
+    console.log(e);
   }
 }]];
