@@ -30,7 +30,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     res.send({
       uid: 'Error',
       updateDate: new Date().toISOString(),
-      titleText: '',
+      titleText: 'Error',
       mainText: 'Tipp des Tages ist momentan nicht verfügbar',
       redirectionUrl: '',
     });
