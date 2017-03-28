@@ -22,7 +22,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     res.send({
       uid: asset.link,
       updateDate: tipOfTheDay.published.toISOString(),
-      titleText: 'Tipp des Tages',
+      titleText: `Tipp des Tages - ${enhancedTitle}`,
       mainText: `Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
       redirectionUrl: asset.link,
     });
@@ -30,7 +30,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     res.send({
       uid: 'Error',
       updateDate: new Date().toISOString(),
-      titleText: 'Error',
+      titleText: 'Fehler',
       mainText: 'Tipp des Tages ist momentan nicht verfügbar',
       redirectionUrl: '',
     });
