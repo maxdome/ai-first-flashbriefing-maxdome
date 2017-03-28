@@ -22,16 +22,16 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     res.send({
       uid: asset.link,
       updateDate: tipOfTheDay.published.toISOString(),
-      titleText: `Der Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
-      mainText: asset.description,
+      titleText: '',
+      mainText: `Der Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
       redirectionUrl: asset.link,
     });
   } catch (e) {
     res.send({
       uid: 'Error',
       updateDate: new Date().toISOString(),
-      titleText: 'maxdome ist momentan nicht verfügbar',
-      mainText: e.message,
+      titleText: '',
+      mainText: 'Der Tipp des Tages ist momentan nicht verfügbar',
       redirectionUrl: '',
     });
   }
