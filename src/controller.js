@@ -1,5 +1,4 @@
 module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
-  let tipOfTheDay;
   try {
     const tipOfTheDay = (await maxdome.request('tipOfTheDays').send())[0];
     if (!tipOfTheDay) {
