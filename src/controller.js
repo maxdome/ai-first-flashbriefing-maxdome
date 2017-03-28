@@ -23,7 +23,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
       uid: asset.link,
       updateDate: tipOfTheDay.published.toISOString(),
       titleText: '',
-      mainText: `Der Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
+      mainText: `Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
       redirectionUrl: asset.link,
     });
   } catch (e) {
@@ -31,7 +31,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
       uid: 'Error',
       updateDate: new Date().toISOString(),
       titleText: '',
-      mainText: 'Der Tipp des Tages ist momentan nicht verfügbar',
+      mainText: 'Tipp des Tages ist momentan nicht verfügbar',
       redirectionUrl: '',
     });
   }
