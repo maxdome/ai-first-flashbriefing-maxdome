@@ -7,7 +7,6 @@ Response the maxdome Tip of the Day in the JSON feed format.
 
 ```json
 {
-
   "uid": "http://maxdome.de/2087288",
   "updateDate": "2017-03-28T07:00:00.000Z",
   "titleText": "",
