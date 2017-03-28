@@ -22,7 +22,7 @@ module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
     res.send({
       uid: asset.link,
       updateDate: tipOfTheDay.published.toISOString(),
-      titleText: `Tipp des Tages - ${enhancedTitle}`,
+      titleText: `Tipp des Tages: ${enhancedTitle}`,
       mainText: `Tipp des Tages von ${maxpert.firstname} ${maxpert.surname}: ${enhancedTitle}, ${review.headline}`,
       redirectionUrl: asset.link,
     });
