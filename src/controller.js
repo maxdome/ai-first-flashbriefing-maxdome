@@ -1,5 +1,5 @@
 module.exports = ({ maxdome }) => ['get', ['/', async (req, res) => {
-  const tipOfTheDay = (await maxdome.request('tipOfTheDays').send())[0];
+  const tipOfTheDay = (await maxdome.request('tipOfTheDays').send({ headers: { 'x-forwarded-for': req.ip } }))[0];
   const review = tipOfTheDay.review;
   const asset = review.asset;
   let enhancedTitle;
