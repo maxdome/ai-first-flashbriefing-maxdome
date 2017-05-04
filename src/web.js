@@ -5,7 +5,6 @@ require('dcontrollers')(
   [
     require('./controller')({
       maxdome: require('drequest-maxdome').getRequestBuilder(),
-      renderer: require('ai-renderer-maxdome'),
     }),
   ]
 );

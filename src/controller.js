@@ -1,4 +1,6 @@
-module.exports = ({ maxdome, renderer }) =>
+const renderer = require('ai-renderer-maxdome');
+
+module.exports = ({ maxdome }) =>
   ['get', ['/', async (req, res) => {
     const tipOfTheDay = (await maxdome.request('tipOfTheDays').send())[0];
     const review = tipOfTheDay.review;
