@@ -1,9 +1,10 @@
 const _ = {
   sample: require('lodash.sample'),
 };
+const renderer = require('ai-renderer-maxdome');
 const { Review } = require('drequest-maxdome');
 
-module.exports = ({ maxdome, renderer }) =>
+module.exports = ({ maxdome }) =>
   ['get', ['/', async (req, res) => {
     const page = await maxdome.get('v1/pages/%2F', {
       headers: {
