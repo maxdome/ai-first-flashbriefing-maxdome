@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ai-flashbriefing-maxdome",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "",
   "license": "UNLICENSED",
   "homepage": "http://github.com/dragonprojects/ai-flashbriefing-maxdome",
@@ -25,14 +25,15 @@
   },
   "dependencies": {
     "ai-renderer-maxdome": "^1.1.0",
-    "dcontrollers": "^1.2.1",
+    "dcontrollers": "^1.4.1",
     "dexpress": "^3.0.0",
-    "dotenv": "^4.0.0",
-    "drequest-maxdome": "^2.3.5"
+    "dotenv-safe": "^4.0.3",
+    "drequest-maxdome": "^2.3.6",
+    "lodash.sample": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
-    "eslint-config-dnode": "^1.8.0",
+    "eslint-config-dnode": "^1.11.0",
     "nodemon": "^1.11.0"
   }
 }
