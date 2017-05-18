@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ai-flashbriefing-maxdome",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
   "license": "UNLICENSED",
   "homepage": "http://github.com/dragonprojects/ai-flashbriefing-maxdome",
@@ -29,7 +29,8 @@
     "dexpress": "^3.0.0",
     "dotenv-safe": "^4.0.3",
     "drequest-maxdome": "^2.3.6",
-    "lodash.sample": "^4.2.1"
+    "lodash.sample": "^4.2.1",
+    "morgan": "^1.8.1"
   },
   "devDependencies": {
     "dprettier": "^1.1.0",
