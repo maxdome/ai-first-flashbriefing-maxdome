@@ -1,8 +1,7 @@
 require('dotenv-safe').config();
 
-const controller = process.env.CONTROLLER || 'tipOfTheDay';
 require('dcontrollers')(require('dexpress')(), [
-  require(`./controllers/${controller}`)({
+  require(`./controllers/${process.env.CONTROLLER || 'tipOfTheDay'}`)({
     maxdome: require('drequest-maxdome').getRequestBuilder(),
   }),
 ]);
