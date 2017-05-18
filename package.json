@@ -2,7 +2,7 @@
   "private": true,
   "name": "ai-flashbriefing-maxdome",
   "version": "1.4.1",
-  "description": "",
+  "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
   "license": "UNLICENSED",
   "homepage": "http://github.com/dragonprojects/ai-flashbriefing-maxdome",
   "author": {
