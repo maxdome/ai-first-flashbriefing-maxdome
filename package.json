@@ -1,38 +1,25 @@
 {
   "private": true,
+  "engines": {
+    "node": "^7.6.0"
+  },
   "name": "ai-flashbriefing-maxdome",
   "version": "1.5.0",
   "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
-  "license": "UNLICENSED",
-  "homepage": "http://github.com/dragonprojects/ai-flashbriefing-maxdome",
-  "author": {
-    "name": "Sharaal",
-    "email": "developer@dragonprojects.de",
-    "url": "http://dragonprojects.de"
+  "publishConfig": {
+    "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dragonprojects/ai-flashbriefing-maxdome.git"
-  },
-  "readmeFilename": "README.md",
   "scripts": {
-    "develop": "nodemon src/web.js",
-    "fmt": "dprettier",
     "start": "node src/web.js"
   },
-  "engines": {
-    "node": "7.6.x"
-  },
   "dependencies": {
+    "@dnode/controllers": "^1.0.0",
+    "@dnode/middlewares": "^1.0.1",
+    "@dnode/request-maxdome": "^1.0.0",
     "ai-renderer-maxdome": "^1.1.0",
-    "dcontrollers": "^1.4.1",
-    "dexpress": "^3.0.0",
-    "dotenv-safe": "^4.0.3",
-    "drequest-maxdome": "^2.3.6",
+    "dotenv-safe": "^4.0.4",
+    "express": "^4.14.0",
     "lodash.sample": "^4.2.1"
   },
-  "devDependencies": {
-    "dprettier": "^1.1.0",
-    "nodemon": "^1.11.0"
-  }
+  "devDependencies": {}
 }

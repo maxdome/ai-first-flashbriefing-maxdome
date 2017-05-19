@@ -2,7 +2,7 @@ const _ = {
   sample: require('lodash.sample'),
 };
 const renderer = require('ai-renderer-maxdome');
-const { Review } = require('drequest-maxdome');
+const { Review } = require('@dnode/request-maxdome');
 
 module.exports = ({ maxdome }) => [
   'get',
