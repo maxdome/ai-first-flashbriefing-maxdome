@@ -3,10 +3,10 @@
   "engines": {
     "node": "^7.6.0"
   },
-  "name": "ai-flashbriefing-maxdome",
+  "name": "@ai-first/flashbriefing-maxdome",
   "version": "1.5.0",
   "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
-  "repository": "sharaal/ai-flashbriefing-maxdome",
+  "repository": "sharaal/ai-first-flashbriefing-maxdome",
   "license": "UNLICENSED",
   "publishConfig": {
     "access": "public"
