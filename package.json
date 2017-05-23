@@ -6,6 +6,8 @@
   "name": "ai-flashbriefing-maxdome",
   "version": "1.5.0",
   "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
+  "repository": "sharaal/ai-flashbriefing-maxdome",
+  "license": "UNLICENSED",
   "publishConfig": {
     "access": "public"
   },
