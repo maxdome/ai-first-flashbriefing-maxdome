@@ -1,7 +1,7 @@
 const _ = {
   sample: require('lodash.sample'),
 };
-const renderer = require('ai-renderer-maxdome');
+const renderer = require('@ai-first/renderer-maxdome');
 const { Review } = require('@dnode/request-maxdome');
 
 module.exports = ({ maxdome }) => [

@@ -1,4 +1,4 @@
-const renderer = require('ai-renderer-maxdome');
+const renderer = require('@ai-first/renderer-maxdome');
 
 module.exports = ({ maxdome }) => [
   'get',
