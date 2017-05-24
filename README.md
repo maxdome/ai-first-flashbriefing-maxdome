@@ -1,9 +1,3 @@
-[![Dependency Status](https://david-dm.org/dragonprojects/ai-flashbriefing-maxdome.svg)](https://david-dm.org/dragonprojects/ai-flashbriefing-maxdome)
-[![devDependency Status](https://david-dm.org/dragonprojects/ai-flashbriefing-maxdome/dev-status.svg)](https://david-dm.org/dragonprojects/ai-flashbriefing-maxdome?type=dev)
-
-Response the maxdome Tip of the Day in the JSON feed format (e.g. Alexa Flash Briefing).
-   
-   
 # Example Feed
 
 ```json
@@ -16,11 +10,10 @@ Response the maxdome Tip of the Day in the JSON feed format (e.g. Alexa Flash Br
 }
 ```
 
-
-# Documentation
+# Usage
 
 ## Setup for `Alexa Flash Briefing` (Configuration -> Feed Information)
 
-![](https://raw.githubusercontent.com/dragonprojects/ai-flashbriefing-maxdome/master/docs/alexa-flash-briefing.png)
+![](https://raw.githubusercontent.com/sharaal/ai-flashbriefing-maxdome/master/docs/alexa-flash-briefing.png)
 
 * `URL` to the root path of the deployed service
