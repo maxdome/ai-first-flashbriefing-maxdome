@@ -1,12 +1,17 @@
 require('dotenv-safe').config();
 
+const logger = require('@dnode/log')({ level: process.env.LOG_LEVEL });
+
 const app = require('express')();
 app.disable('x-powered-by');
 
-require('@dnode/middlewares')(app, []);
+require('@dnode/middlewares')(app, [
+  require('@dnode/log-middleware')({ log: logger.info }),
+]);
 
 const controller = process.env.CONTROLLER || 'tipOfTheDay';
 const maxdome = require('@dnode/request-maxdome').getRequestBuilder({
+  log: logger.error,
   maxdomeOptions: {
     apikey: process.env.MAXDOME_APIKEY,
     appid: process.env.MAXDOME_APPID,
