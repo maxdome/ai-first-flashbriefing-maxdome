@@ -1,6 +1,9 @@
 require('dotenv-safe').config();
 
-const logger = require('@dnode/log')({ level: process.env.LOG_LEVEL });
+const logger = require('@dnode/log')({
+  level: process.env.LOG_LEVEL,
+  timestamp: process.env.LOG_TIMESTAMP,
+});
 
 const app = require('express')();
 app.disable('x-powered-by');
