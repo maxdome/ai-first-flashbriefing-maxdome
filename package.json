@@ -4,7 +4,7 @@
     "node": "^7.6.0"
   },
   "name": "@ai-first/flashbriefing-maxdome",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Alexa's 'Tägliche Zusammenfassung' with the maxdome tip of the day",
   "repository": "sharaal/ai-first-flashbriefing-maxdome",
   "license": "UNLICENSED",
@@ -17,6 +17,8 @@
   "dependencies": {
     "@ai-first/renderer-maxdome": "^1.2.5",
     "@dnode/controllers": "^1.0.0",
+    "@dnode/log": "^1.1.1",
+    "@dnode/log-middleware": "^1.0.0",
     "@dnode/middlewares": "^1.0.1",
     "@dnode/request-maxdome": "^2.0.0",
     "dotenv-safe": "^4.0.4",
