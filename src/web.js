@@ -30,5 +30,8 @@ require('@dnode/controllers')(app, [
 if (module.parent) {
   module.exports = app;
 } else {
-  app.listen(process.env.PORT);
+  const port = process.env.PORT;
+  app.listen(port, () => {
+    logger.info(`app listen on port ${port}`);
+  });
 }
